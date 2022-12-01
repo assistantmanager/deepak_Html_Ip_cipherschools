@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images & responsiveness in HTML</title>
+</head>
+<body>
+<!-- <img src="https://thumbs.dreamstime.com/b/classic-house-flower-garden-751996.jpg" alt="House" srcset="/assets/small.jpg 480w,
+        /assets/medium.jpg 800w,
+        /assets/large.jpg 120w"
+        size="(max-width: 480px) 
+        (max-width: 940px) 240px, 
+        (max-width: 144px) 960px"
+> -->
+<picture>
+    <source media="(max-width: 600px)" srcset="https://cdn.houseplansservices.com/product/63moi3e6vg5mbb8rmk0jcug42k/w620x413.jpg?v=18">
+    <source media="(max-width:900px)" srcset="https://cdn.houseplansservices.com/product/63moi3e6vg5mbb8rmk0jcug42k/w620x413.jpg?v=18">
+    <img src="https://cdn.houseplansservices.com/product/63moi3e6vg5mbb8rmk0jcug42k/w620x413.jpg?v=18" alt="">
+</picture>
+
+<!-- image maping -->
+<img src="https://cdn.houseplansservices.com/product/63moi3e6vg5mbb8rmk0jcug42k/w620x413.jpg?v=18" alt="workspace" usemap="workspace">
+<map name="workspace">
+    <area shape="rect" coords="34,44,270,350" href="computer.html" alt="computer.html">
+    <area shape="rect" coords="290,172,333,250" href="" alt="phone">
+    <area shape="circle" coords="337,300,44" href="cup.html" alt="cup">
+</map>
+
+</body>
+</html>
